@@ -1,5 +1,9 @@
 import subprocess
-subprocess.call(['pip', 'install', 'opencv-python'])
+import sys
+
+# Install opencv-python-headless if not already installed
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'opencv-python-headless'])
+
 
 
 import streamlit as st
