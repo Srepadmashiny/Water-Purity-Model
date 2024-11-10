@@ -1,11 +1,3 @@
-import subprocess
-import sys
-
-# Force install opencv-python-headless and numpy, as these are the most common dependencies to fail
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "opencv-python-headless"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "numpy"])
-
-
 
 
 import streamlit as st
